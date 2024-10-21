@@ -7,64 +7,76 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio de Juan Pérez - Programador Web</title>
 </head>
-<body class="bg-slate-900">
+<body class="bg-gradient-to-b from-slate-800 to-slate-950">
 
     <!-- Header -->
-    <header class="p-5">
-        <div class="grid grid-cols-1 auto-rows-auto justify-items-center gap-4">
+    <header class="py-5">
+        <div class="grid grid-cols-1 auto-rows-auto justify-items-center gap-4 p-5">
             <div>
                 <img class="rounded-full w-72 h-720 self-center" src="img/perfil.png" alt="Foto de Juan Pérez">
             </div>
         
-            <h1 class="font-mono text-2xl text-white text-center uppercase">Dawson Interfacio Colaviento</h1>
-            <h2 class="font-mono text-xl text-white text-center uppercase">- Programador Web -</h2>
+            <h1 class="font-sans text-2xl text-red-600 text-center uppercase">Dawson Interfacio Colaviento</h1>
+            <h2 class="font-mono text-xl text-white text-center uppercase">Web Developer</h2>
         </div>
     </header>
     
+
+
     <!-- Barra de navegación -->
-    <nav class="p-5">
-        <ul class="grid grid-cols-1 auto-rows-auto justify-items-center gap-2">
-            <li><a href="#bio">Sobre Mí</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
+    <nav class="py-5">
+        <ul class="grid grid-cols-1 md:grid-cols-5 auto-rows-auto text-lg justify-items-center gap-2">
+            <li class="text-white hover:bg-red-600 w-full text-center p-1 md:p-3"><a href="#bio">Sobre Mí</a></li>
+            <li class="text-white hover:bg-red-600 w-full text-center p-1 md:p-3"><a href="#skills">Habilidades</a></li>
+            <li class="text-white hover:bg-red-600 w-full text-center p-1 md:p-3"><a href="#experience">Experiencia</a></li>
+            <li class="text-white hover:bg-red-600 w-full text-center p-1 md:p-3"><a href="#projects">Proyectos</a></li> 
+            <li class="text-white hover:bg-red-600 w-full text-center p-1 md:p-3"><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
 
 
-    <div class="">
+    <div class="grid grid-cols-1 md:grid-cols-3 auto-rows-auto justify-items-center gap-2 p-5">
+        
+        <img src="img/manzana.png" alt="" class="p-4 hidden md:block">
+        <img src="img/manzana.png" alt="" class="p-4 hidden md:block">
+        <img src="img/manzana.png" alt="" class="p-4 hidden md:block">
+    
         <!-- Biografía -->
-        <section class="p-5" id="bio" class="bio">
-            <h2 class="font-mono text-md text-white text-center uppercase p-3">Sobre Mí</h2>
-            <p class="font-sans text-white text-center ">Hola, soy Juan Pérez, un programador web con 5 años de experiencia especializado en el desarrollo de aplicaciones web modernas, funcionales y optimizadas. Mi pasión es crear interfaces de usuario interactivas y soluciones de backend eficientes.</p>
+        <section class="py-5" id="bio" class="bio">
+            <h2 class="font-sans text-md text-red-600 text-center uppercase py-3">Sobre Mí</h2>
+            <p class="font-mono text-white text-center ">Hola, soy Juan Pérez, un programador web con 5 años de experiencia especializado en el desarrollo de aplicaciones web modernas, funcionales y optimizadas. Mi pasión es crear interfaces de usuario interactivas y soluciones de backend eficientes.</p>
+            <p class="font-mono text-white text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur illum autem optio, laudantium maiores est iure nemo. Mollitia adipisci molestiae odit recusandae dolorem nobis ullam quod voluptatem harum sint?</p>
         </section>
 
+        <img src="img/manzana.png" alt="" class="p-4 md:hidden">
+
         <!-- Habilidades -->
-        <section id="skills" class="skills p-5">
-            <h2 class="font-mono text-md text-white text-center uppercase p-3">Habilidades</h2>
-            <ul class="font-mono text-md text-white text-center uppercase p-3">
-                <li>HTML5 / CSS3 / JavaScript</li>
-                <li>React / Vue.js</li>
-                <li>Node.js / Express</li>
-                <li>MongoDB / MySQL</li>
-                <li>Git / GitHub</li>
-                <li>Scrum / Kanban</li>
+        <section id="skills" class="skills py-5">
+            <h2 class="font-sans text-md text-red-600 text-center uppercase py-3">Habilidades</h2>
+            <ul class="font-mono text-md text-white text-center uppercase py-3">
+                <li class="p-3">HTML5 / CSS3 / JavaScript</li>
+                <li class="p-3">React / Vue.js</li>
+                <li class="p-3">Node.js / Express</li>
+                <li class="p-3">MongoDB / MySQL</li>
+                <li class="p-3">Git / GitHub</li>
+                <li class="p-3">Scrum / Kanban</li>
             </ul>
         </section>
 
+        <img src="img/manzana.png" alt="" class="p-4 md:hidden">
+
         <!-- Experiencia -->
-        <section id="experience" class="experience p-5">
-            <h2 class="font-mono text-md text-white text-center uppercase p-3">Experiencia</h2>
-            <ul class="font-mono text-md text-white text-center p-3">
-                <li><strong>Desarrollador Full Stack</strong> - Tech Solutions (2022 - Presente)
-                    <ul>
+        <section id="experience" class="experience py-5">
+            <h2 class="font-sans text-md text-red-600 text-center uppercase py-3">Experiencia</h2>
+            <ul class="font-mono text-md text-white text-center py-3">
+                <li class="p-3"><strong>Desarrollador Full Stack</strong> - Tech Solutions (2022 - Presente)
+                    <ul class="text-sm">
                         <li>Diseño y desarrollo de aplicaciones web usando React y Node.js.</li>
                         <li>Implementación de API RESTful y optimización del rendimiento de backend.</li>
                     </ul>
                 </li>
-                <li><strong>Frontend Developer</strong> - Web Creatives (2019 - 2022)
-                    <ul>
+                <li class="p-3"><strong>Frontend Developer</strong> - Web Creatives (2019 - 2022)
+                    <ul class="text-sm">
                         <li>Desarrollo de interfaces de usuario interactivas con HTML, CSS y JavaScript.</li>
                         <li>Colaboración con diseñadores UX para mejorar la experiencia de usuario.</li>
                     </ul>
@@ -72,29 +84,34 @@
             </ul>
         </section>
 
+        <img src="img/manzana.png" alt="" class="p-4 md:hidden">
+
         <!-- Proyectos -->
-        <section id="projects" class="projects p-5">
-            <h2 class="font-mono text-md text-white text-center uppercase p-3">Proyectos</h2>
-            <ul class="font-mono text-md text-white text-center p-3">
-                <li><strong>MiBlogApp</strong> - Aplicación de blogging creada con React y Node.js.</li>
-                <li><strong>TaskManager</strong> - Herramienta de gestión de tareas con autenticación de usuarios.</li>
-                <li><strong>Portfolio Personal</strong> - Sitio web responsive utilizando HTML, CSS y JavaScript.</li>
+        <section id="projects" class="projects py-5">
+            <h2 class="font-sans text-md text-red-600 text-center uppercase py-3">Proyectos</h2>
+            <ul class="font-mono text-md text-white text-center py-3">
+                <li class="p-3"><strong>MiBlogApp</strong> - Aplicación de blogging creada con React y Node.js.</li>
+                <li class="p-3"><strong>TaskManager</strong> - Herramienta de gestión de tareas con autenticación de usuarios.</li>
+                <li class="p-3"><strong>Portfolio Personal</strong> - Sitio web responsive utilizando HTML, CSS y JavaScript.</li>
             </ul>
         </section>
 
+        <img src="img/manzana.png" alt="" class="p-4 md:place-self-center">
+
         <!-- Contacto -->
-        <section id="contact" class="contact p-5">
-            <h2>Contacto</h2>
-            <ul>
-                <li>Email: <a href="mailto:juanperez@gmail.com">juanperez@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/juanperez" target="_blank">linkedin.com/in/juanperez</a></li>
-                <li>GitHub: <a href="https://github.com/juanperez" target="_blank">github.com/juanperez</a></li>
+        <section id="contact" class="contact py-5">
+            <h2 class="font-sans text-md text-red-600 text-center uppercase py-3">Contacto</h2>
+            <ul class="font-mono text-md text-white text-center py-3">
+                <li>Email: <a href="mailto:dawdortailwind@gmail.com">dawdortailwind@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/DawTailwind" target="_blank">linkedin.com/in/DawTailwind</a></li>
+                <li>GitHub: <a href="https://github.com/DawIntTailwind" target="_blank">https://github.com/DawIntTailwind</a></li>
             </ul>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Juan Pérez. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Dawson Interfacio Colaviento.</p>
+        <a href="https://www.flaticon.es/iconos-gratis/kawaii" title="kawaii iconos">Kawaii iconos creados por Creartive - Flaticon</a>
     </footer>
 
 </body>
